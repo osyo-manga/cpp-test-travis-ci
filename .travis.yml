@@ -1,6 +1,4 @@
 language: cpp
-compiler:
-  - gcc
 script:
   - g++ --version
   - g++ -std=c++11 -Wall -Wextra -pedantic src/test.cpp && ./a.out
