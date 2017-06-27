@@ -18,8 +18,6 @@ addons:
       - clang-5.0
       - build-essential
       - binutils
-      - gcc-7
-      - g++-7
 
 
 before_install :
@@ -28,9 +26,7 @@ before_install :
   - sudo apt-get update -qq
 
 install:
-#   - sudo apt-get -qq install build-essential
-#   - sudo apt-get install binutils
-#   - sudo apt-get install gcc-7 g++-7
+  - sudo apt-get install gcc-7 g++-7
 
 script:
   - clang++-5.0 --version
