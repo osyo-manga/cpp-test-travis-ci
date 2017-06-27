@@ -16,8 +16,8 @@ addons:
       - jonathonf/gcc-7.1/ubuntu
 
 before_install :
-  - sudo add-apt-repository --yes ppa:jonathonf/binutils
-  - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
+#   - sudo add-apt-repository --yes ppa:jonathonf/binutils
+#   - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
   - sudo apt-get update -qq
 
 install:
