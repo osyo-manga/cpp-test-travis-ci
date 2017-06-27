@@ -16,10 +16,6 @@ addons:
       - jonathonf/gcc-7.1/ubuntu
 
 before_install :
-#   - echo "deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty main" | sudo tee -a /etc/apt/sources.list
-#   - echo "deb http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu precise main" | sudo tee -a /etc/apt/sources.list
-#   - echo "deb http://ppa.launchpad.net/jonathonf/gcc-7.1/ubuntu/ trusty main" | sudo tee -a /etc/apt/sources.list
-#   - sudo add-apt-repository --yes ppa:jonathonf/gcc-7.1
   - sudo add-apt-repository --yes ppa:jonathonf/binutils
   - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
   - sudo apt-get update -qq
@@ -34,6 +30,7 @@ install:
 
 script:
   - clang++-5.0 --version
+  - g++-7 --version
 #   - g++-${GCC_VERSION} -std=gnu++1z -Wall -Wextra -pedantic test/zubera.cpp && ./a.out
 #   - clang++-5.0 -std=gnu++1z -Wall -Wextra -pedantic test/zubera.cpp && ./a.out
 
