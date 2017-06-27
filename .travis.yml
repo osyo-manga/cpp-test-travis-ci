@@ -13,12 +13,12 @@ addons:
     sources:
       - ubuntu-toolchain-r/test/ubuntu
       - llvm-toolchain-trusty
+      - jonathonf/gcc-7.1/ubuntu
 
 before_install :
 #   - echo "deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty main" | sudo tee -a /etc/apt/sources.list
 #   - echo "deb http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu precise main" | sudo tee -a /etc/apt/sources.list
-  - echo "deb http://ppa.launchpad.net/jonathonf/gcc-7.1/ubuntu/ trusty main" | sudo tee -a /etc/apt/sources.list
-  - echo "deb http://ppa.launchpad.net/jonathonf/gcc-7.1/ubuntu/ trusty main" | sudo tee -a /etc/apt/sources.list
+#   - echo "deb http://ppa.launchpad.net/jonathonf/gcc-7.1/ubuntu/ trusty main" | sudo tee -a /etc/apt/sources.list
 #   - sudo add-apt-repository --yes ppa:jonathonf/gcc-7.1
   - sudo add-apt-repository --yes ppa:jonathonf/binutils
   - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
