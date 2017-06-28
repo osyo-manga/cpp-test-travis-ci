@@ -10,7 +10,6 @@ TEST_CASE("test", "std::vector"){
 	v.push_back(3);
 
 	REQUIRE(( v == std::vector<int>{1, 2, 3} ));
-	REQUIRE(( v == std::vector<int>{1, 2, 4} ));
 }
 
 
