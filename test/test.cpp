@@ -16,7 +16,7 @@ void func(){
 		REQUIRE((v == List{1, 2, 3}));
 	}
 
-	v.resize(3);
+	v.resize(5);
     REQUIRE( v.size() == 5 );
 
     SECTION( "resizing bigger changes size and capacity" ) {
