@@ -18,8 +18,9 @@ addons:
       - clang-5.0
       - build-essential
       - binutils
-      - libboost-all-dev
-      - cmake
+#       - libboost-all-dev
+      - cmak
+      - libgtest-deve
 
 before_install :
   - sudo add-apt-repository --yes ppa:jonathonf/binutils
@@ -28,10 +29,12 @@ before_install :
 
 install:
   - sudo apt-get install gcc-7 g++-7
+  - cd /usr/src/gtest && sudo cmake . && sudo cmake --build . && sudo mv libg* /usr/local/lib/ ; cd -
 
 script:
   - clang++-5.0 --version
   - g++-7 --version
   - g++-7 -std=gnu++1z -Wall -Wextra -pedantic test/test.cpp && ./a.out
+  - g++-7 -std=gnu++1z -Wall -Wextra -pedantic gtest.cpp -lgtest -lgtest_main -pthread && ./a.out
   - clang++-5.0 -std=gnu++1z -Wall -Wextra -pedantic test/test.cpp && ./a.out
 
