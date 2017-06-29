@@ -35,6 +35,6 @@ script:
   - clang++-5.0 --version
   - g++-7 --version
   - g++-7 -std=gnu++1z -Wall -Wextra -pedantic test/test.cpp && ./a.out
-  - g++-7 -std=gnu++1z -Wall -Wextra -pedantic gtest.cpp -lgtest -lgtest_main -pthread && ./a.out
+  - g++-7 -std=gnu++1z -Wall -Wextra -pedantic test/gtest.cpp -lgtest -lgtest_main -pthread && ./a.out
   - clang++-5.0 -std=gnu++1z -Wall -Wextra -pedantic test/test.cpp && ./a.out
 
