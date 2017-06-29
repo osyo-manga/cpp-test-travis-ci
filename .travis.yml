@@ -19,8 +19,8 @@ addons:
       - build-essential
       - binutils
 #       - libboost-all-dev
-      - cmak
-      - libgtest-deve
+      - cmake
+      - libgtest-dev
 
 before_install :
   - sudo add-apt-repository --yes ppa:jonathonf/binutils
