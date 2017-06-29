@@ -17,7 +17,7 @@ TYPED_TEST(container_test, push_back){
 	v.push_back(2);
 	v.push_back(3);
 
-	EXPECT_EQ(v, (TypeParam{1, 2, 4}));
+	EXPECT_EQ(v, (TypeParam{1, 2, 3}));
 }
 
 
